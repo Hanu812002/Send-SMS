@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send SMS App"
+        android:textSize="40sp"
+        android:paddingLeft="80dp"
+        android:textColor="@color/white"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        >
+    <EditText
+        android:id="@+id/num"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="20dp"
+        android:hint="Phone number"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/mess"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Type a message"
+        android:inputType="textLongMessage"
+        android:gravity="top"
+        android:layout_margin="8dp"
+        />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="send"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        />
+    </LinearLayout>
+</LinearLayout>
